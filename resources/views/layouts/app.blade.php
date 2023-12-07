@@ -50,7 +50,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
 
     <script>
-    const xValues = ['Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Aout', 'Septembre', 'Octobre',
+    const xValues = ['','Janvier', 'Fevrier', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Aout', 'Septembre', 'Octobre',
         'Novembre', 'Decembre'
     ];
 
@@ -62,7 +62,7 @@
                 label: 'Monthly Data',
                 backgroundColor: "rgba(0, 0, 255, 0.5)",
                 borderColor: "rgba(0, 0, 255, 1)",
-                data: [100, 150, 200, 180, 220, 20, 45, 110, 40, 250, 270, 180]
+                data: ['',100, 150, 200, 180, 220, 20, 45, 110, 40, 250, 270, 180]
             }]
         },
         options: {

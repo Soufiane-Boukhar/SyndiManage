@@ -3,7 +3,7 @@
 @section('content')
 <div class="flex justify-between titleEmp">
     <div class="employeur p-12">
-        <h1>Les informations des employeurs...</h1>
+        <h1>La list des employeurs...</h1>
         <div class="blog mt-2"></div>
     </div>
     <div class="p-12">

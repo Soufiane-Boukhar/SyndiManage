@@ -11,8 +11,8 @@
         </li>
 
 
-        <li>
-            <a href="#">
+        <li class="{{ request()->routeIs('dashboard') ? 'active' : '' }}">
+            <a href="{{ route('dashboard') }}">
 
                 <span class="title">
                     <i class="fa-solid fa-house fa-xl iconsNav"></i><span class="item">Acceuil</span>
@@ -48,8 +48,8 @@
             </a>
         </li>
 
-        <li>
-            <a href="#">
+        <li class="{{ request()->routeIs('transaction.index') ? 'active' : '' }}">
+            <a href="{{ route('transaction.index') }}">
 
                 <span class="title">
                     <i class="fas fa-money-check-alt fa-xl iconsNav"></i>

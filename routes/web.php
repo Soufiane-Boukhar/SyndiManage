@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ChapaController;
+use App\Http\Controllers\PaymentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -46,13 +47,19 @@ Route::middleware('auth')->group(function () {
         return view('depenses.index');
     })->name('depenses.index');
 
+    Route::get('/transaction',function(){
+        return view('mesTransaction.index');
+    })->name('transaction.index');
 
 
+
     
     
     
-Route::post('pay/initialize', [ChapaController::class,'initialize'])->name('pay');
+Route::post('payment/initialize', [ChapaController::class,'initialize'])->name('pay');
 Route::get('callback/{reference}', [ChapaController::class,'callback'])->name('callback');
+Route::get('/paiement/{id}/receipt', [PaymentController::class,'generateReceipt']);
+
 
 });
 

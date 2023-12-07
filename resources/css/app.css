@@ -19,6 +19,16 @@
   --gray: #f5f5f5;
   --black1: #222;
   --black2: #999;
+
+
+  --rating-size: 10rem;
+  --bar-size: 1rem;
+  --background-color: #e7f2fa;
+  --rating-color-default: #2980b9;
+  --rating-color-background: #c7e1f3;
+  --rating-color-good: #27ae60;
+  --rating-color-meh: #f1c40f;
+  --rating-color-bad: #e74c3c;
 }
 
 body {
@@ -256,6 +266,8 @@ body {
 
 
 
+
+
 @keyframes typing {
   0% {
     width: 0;
@@ -334,6 +346,77 @@ body {
 
 .table-container {
   overflow-x: auto;
+}
+
+
+.rating {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-top: 10%;
+  background: var(--rating-color-default);
+  color: var(--rating-color-default);
+  width: var(--rating-size);
+  height: var(--rating-size);
+  font-size: calc(var(--rating-size) / 3);
+  line-height: 1;
+}
+
+.rating span {
+  position: relative;
+  display: flex;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.rating span small {
+  font-size: 0.5em;
+  font-weight: 900;
+  align-self: center;
+}
+
+.rating::after {
+  content: "";
+  position: absolute;
+  inset: var(--bar-size);
+  background: var(--background-color);
+  border-radius: inherit;
+  z-index: 1;
+}
+
+.rating::before {
+  content: "";
+  position: absolute;
+  inset: var(--bar-size);
+  border-radius: inherit;
+  box-shadow: 0 0 0 1rem var(--rating-color-background);
+  z-index: -1;
+}
+
+.rating.good {
+  background: var(--rating-color-good);
+  color: var(--rating-color-good);
+}
+
+.rating.meh {
+  background: var(--rating-color-meh);
+  color: var(--rating-color-meh);
+}
+
+.rating.bad {
+  background: var(--rating-color-bad);
+  color: var(--rating-color-bad);
+}
+
+.w-fit-content {
+  width: fit-content;
+}
+
+.h-fit-content {
+  height: fit-content;
 }
 
 /* ====================== Responsive Design ========================== */
