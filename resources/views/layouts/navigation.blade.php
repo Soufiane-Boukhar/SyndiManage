@@ -30,8 +30,8 @@
         </li>
 
 
-        <li>
-            <a href="#">
+        <li class="{{ request()->routeIs('depenses.index') ? 'active' : '' }}">
+            <a href="{{ route('depenses.index') }}">
                 <span class="title">
                     <i class="fas fa-money-bill fa-xl iconsNav"></i>
                     <span class="item">Dépenses</span>

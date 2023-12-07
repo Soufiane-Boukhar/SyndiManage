@@ -27,7 +27,7 @@
 </div>
 
 
-<div class="container p-4">
+<div class="container p-4 mb-5">
     <table class="min-w-full bg-white border border-gray-300">
         <thead>
             <tr>

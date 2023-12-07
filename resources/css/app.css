@@ -148,8 +148,25 @@ body {
   display: none;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 
+.container{
+  margin-bottom: 10%;
+}
+.main-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa; 
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 -10px 10px -10px #a9a9ab;
 
+}
 /* ===================== Main ===================== */
 .main {
   position: absolute;
@@ -171,7 +188,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
-    box-shadow: 0 10px 10px -10px #2a2c95;
+    box-shadow: 0 10px 10px -10px #a9a9ab;
 }
   
 
@@ -313,6 +330,10 @@ body {
 
 .btn:hover {
   background-color: #2a2c95 !important;
+}
+
+.table-container {
+  overflow-x: auto;
 }
 
 /* ====================== Responsive Design ========================== */

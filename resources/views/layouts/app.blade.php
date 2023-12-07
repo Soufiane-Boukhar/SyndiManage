@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="wrapper">
         @include('layouts.navigation')
 
         <div class="main">
@@ -34,12 +34,10 @@
             </div>
             @yield('content')
 
-            <div class="p-12">
-                <footer class="main-footer">
-                    <strong>
-                        Copyright &copy; 2023-2024 SyndiManage.</strong> Tous droits réservés.
-                </footer>
-            </div>
+            <footer class="main-footer mt-5">
+                <strong>
+                    Copyright &copy; 2023-2024 SyndiManage.</strong> Tous droits réservés.
+            </footer>
 
         </div>
     </div>

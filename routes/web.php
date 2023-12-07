@@ -41,6 +41,14 @@ Route::middleware('auth')->group(function () {
     Route::get('/pay/list',function(){
         return view('paiement.index');
     })->name('paiement.index');
+
+    Route::get('/depenses',function(){
+        return view('depenses.index');
+    })->name('depenses.index');
+
+
+
+    
     
     
 Route::post('pay/initialize', [ChapaController::class,'initialize'])->name('pay');
