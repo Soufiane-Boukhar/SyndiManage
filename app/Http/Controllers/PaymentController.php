@@ -7,7 +7,7 @@ use PDF;
 
 class PaymentController extends Controller
 {
-    public function generateReceipt($paymentId)
+    public function generateReceipt($id)
     {
         
         $pdf = PDF::loadView('receipt', compact('paymentDetails'));
